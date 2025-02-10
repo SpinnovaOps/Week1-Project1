@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Recently Added Task</h2>
+    <p>{{ task if task else "No recent task added." }}</p>
+    <a href="{{ url_for('index') }}" class="btn">Back to Home</a>
+{% endblock %}
